@@ -2,25 +2,33 @@ html {
 	background-color: #2F302F; 
 	font-family: Arial; 
 	font-size: 25px; 
+	min-width:800px;
 }
 
 #headerDiv {
 	color: white; 
 	text-align:center; 
 	padding: 25px; 
-	width: 85%; 	
 }
 
 hr{
 	color:white; 
-	width: 85%; 	
+	width:85%;
 }
 
 .container {
 	height:150px; 
-	width:150px; 
-	border-radius:15px;
+	width:280px; 
+	border-radius:2px;
 	border-color:white;
 	box-shadow:2px;
-	background-color:darkgrey;
+	background-color:#515151;
+	margin-left:400px;
+	text-align:center;
+	color:white; 
+}
+
+a {
+	text-decoration:none; 
+	color:white;
 }
