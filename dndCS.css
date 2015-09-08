@@ -21,24 +21,48 @@ hr{
 	border-radius:15px;
 	border-color:white;
 	box-shadow:2px;
-	background-color:darkgrey;
 }
 
 .attributes {
 	height:85px;
 	width:115px;
-	border:2x solid white; 
+	border:1px solid white; 
 	border-radius:2px;
 	background-color:#515151;
 	color:white;
 	margin-left:7.5%;
+	margin-bottom:15px;
+	display:inline-block;
 }
 
 .attText {
-	margin-left:auto;
-	margin-right:auto;
+	padding-top:2px;
+	text-align:center;
 }
 
 .attMod{
-	margin:auto;
+	text-align:center;
+	padding-top:5px;
+	font-size:35px;
+}
+.attScore{
+	text-align:center;
+	vertical-align:center;
+}
+
+.attScore{
+	position:relative;
+	top:9px;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid white;
+	border-radius:15px;
+	width:45px;
+	background-color:#515151;
+}
+
+#attributeContainer{
+	padding-left:7.5%;
+	width:85px;
+	margin-top:10px;
 }

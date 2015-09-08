@@ -1,0 +1,79 @@
+1)	string firstName = "William"; 
+	string lastName = "Tell"; 
+	
+	string fullName = firstName + " " + lastName; 
+	
+
+2) 	string username = "Paul"; 
+	string message = "Please join our Aubie message group!"; 
+	string message_buffer; 
+	
+	username = "{[" + username + "]}"; 
+	message_buffer = username + message; 
+
+3)	string username = "Paul"; 
+	string message = "Please join our Aubie message group!"; 
+	string message_buffer; 
+	string username2 = "Martha"; 
+	string message2 = "Wazzup!"; 
+	
+	username = "{[" + username + "]}"; 
+	username2 = "{[" + username2 + "]}"; 
+		
+	message_buffer = username2 + message2 + username + message; 
+	
+4) 	string message3 = "Go Tiger"; 
+	string message4 = "Glory to Auburn!"; 
+	
+	message_buffer = message3 + "\n" + message4; 
+
+	It printed "Glory to Auburn!" on a new line. 
+
+5) 	Since strings are treated as arrays of characters, username.size() returns the  
+	length of the array that is used to represent username. In question 2, 	message_buffer.size() will return 44. 
+
+6) 	In question 2, message.clear() empties the string. For all intents and purposes, it behaves like an empty string. 
+
+7) 	int index; 
+	index = message_buffer.find("{["); 
+
+8) 	int index; 
+	index = message_buffer.find("{["); 
+	if (index >= 0) {
+		index = message_buffer.find("{[", index + 2); 
+	}
+
+
+9)	string foundMessage;
+    
+    	long startIndex = message_buffer.find("{[");
+   	long endIndex = message_buffer.find("]}");
+    
+   	string firstFoundUsername = message_buffer.substr(startIndex + 2, endIndex - 2);
+
+10)   if (startIndex >= 0 && endIndex >= 0) {
+    	long secondStartIndex = message_buffer.find("{[", startIndex + 2); 
+        long secondEndIndex = message_buffer.find("]}", endIndex + 2);
+        long secondUsernameLength = secondEndIndex - secondStartIndex;   
+
+        string secondFoundUserName = 						message_buffer.substr(secondStartIndex + 2, secondUsernameLength - 2);
+    	}
+
+11)     long startMessageIndex = message_buffer.find("]}");
+    long endMessageIndex = message_buffer.find("{[");
+    long messageLength = startMessageIndex - endMessageIndex - 2;
+    
+    string firstFoundMessage = message_buffer.substr(startMessageIndex + 2, messageLength);
+    string secondFoundMessage;
+    
+    if (startMessageIndex >= 0) {
+        long secondMessageStartIndex = message_buffer.find("]}", startMessageIndex + 2);
+        long secondMessageEndIndex = message_buffer.find("{[");
+        long secondMessageLength = (secondMessageEndIndex != 0) ? secondMessageEndIndex - secondMessageStartIndex : 0;
+        
+        secondFoundMessage = (secondMessageLength == 0) ? message_buffer.substr(secondMessageStartIndex + 2) : message_buffer.substr(secondMessageStartIndex, secondMessageLength);
+    }
+
+12) cin << message buffer will only store the first word that I type into message buffer. getline(cin, messagebuffer) however will store the entire line I type including any whitespace. 
+
+
