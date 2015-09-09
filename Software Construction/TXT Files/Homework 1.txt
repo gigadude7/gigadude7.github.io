@@ -1,3 +1,6 @@
+Grant Cordle
+
+- Answers to the Questions
 1)	string firstName = "William"; 
 	string lastName = "Tell"; 
 	
@@ -75,5 +78,54 @@
     }
 
 12) cin << message buffer will only store the first word that I type into message buffer. getline(cin, messagebuffer) however will store the entire line I type including any whitespace. 
+
+-Instruction on how to compile my code
+1) navigate to the directory that the file is in
+2) use the following command to compile the file and make an executable:
+	g++ Homework1.cpp -o homeworkOutputFile
+3) use the following command to start the program:
+	./homeworkOutputFile
+
+
+- Script of Sample Run
+==================================================
+|      Welcome to the Aubie Message System!      |
+==================================================
+
+Enter user Name> Grant
+Enter the message> This is the first line of the message that Grant enters
+And this is the second. 
+!!
+
+Any more users? > yes
+
+Enter user Name> Roberto
+Enter the message> Roberto is a spicy man from south of the border. 
+He enjoys tortilla chips. 
+!!
+
+Any more users? > yes
+
+Enter user Name> Bobbie-O
+Enter the message> I don't want to enter a message!!!!!
+!!
+
+Any more users? > no
+
+The current Messages are:
+
+Bobbie-O:
+I don't want to enter a message!!!!!
+
+Roberto:
+Roberto is a spicy man from south of the border. 
+He enjoys tortilla chips. 
+
+Grant:
+This is the first line of the message that Grant enters
+And this is the second. 
+
+
+
 
 
