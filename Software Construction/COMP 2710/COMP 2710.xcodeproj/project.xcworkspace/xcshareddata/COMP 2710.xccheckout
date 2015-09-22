@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C3C525C1-8E49-48BB-9B4D-22411B3AFE21</string>
 	<key>IDESourceControlProjectName</key>
-	<string>COMP 2710</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E99A980BB1029720E8EF79C02965394E74A007FB</key>
 		<string>https://github.com/gigadude7/gigadude7.github.io.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Software Construction/COMP 2710/COMP 2710.xcodeproj</string>
+	<string>Software Construction/COMP 2710/COMP 2710.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E99A980BB1029720E8EF79C02965394E74A007FB</key>
