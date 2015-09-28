@@ -5,6 +5,12 @@
 //  Created by Grant Hamilton Cordle on 9/20/15.
 //  Copyright (c) 2015 Grant Hamilton Cordle. All rights reserved.
 //
+//  Program:        ghc0001_1 (lab1)
+//  Name:           Grant Cordle
+//  Class:          COMP 2710 Section 002
+//  Date:           Sept 27, 2015
+//  Email:          ghc0001@auburn.edu
+//  Description:    Creates Users, overloads the '==' operator for the User, returns a list of the User's friends as strings and as Users
 
 #include "User.hpp"
 
