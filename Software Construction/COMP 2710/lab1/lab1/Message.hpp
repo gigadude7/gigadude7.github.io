@@ -11,9 +11,9 @@
 
 #include <stdio.h>
 #include <iostream>
-#include "User.h"
 
-class User; 
+
+class User;
 
 class Message {
     
@@ -21,6 +21,8 @@ public:
     Message(User& currentUser, std::string newMessage, bool isPublic);
     std::string buildMessage();
     bool isTweet; //true if tweet, false if home message
+    User getMessageOwner();
+    std::string getMessageContents();
 
 private:
     std::string message;

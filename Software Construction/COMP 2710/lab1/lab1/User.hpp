@@ -11,7 +11,10 @@
 
 #include <stdio.h>
 #include <iostream>
-#include "Message.h"
+#include "FriendList.hpp"
+#include "WallPage.hpp"
+#include "HomePage.hpp"
+
 
 class User {
 public:
@@ -19,6 +22,9 @@ public:
     User(std::string newName);
     User();
     bool operator==(const User& otherUser);
+    FriendList friends;
+    std::list<User> getUserFriends();
+    std::list<std::string> usersFriends();
 private:
     std::string name;
 };

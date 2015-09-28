@@ -12,8 +12,9 @@
 #include <stdio.h>
 #include <list>
 #include <iostream>
-#include "User.h"
-#include "Message.h"
+#include "User.hpp"
+#include "Message.hpp"
+#include "WallPage.hpp"
 
 
 class System {
@@ -29,12 +30,13 @@ public:
     void switchUsers();
     void quitWeagleBook();
     void printRegisteredUsers();
-    bool isLoggedIn;
+    void displayFriends();
 
 private:
     std::list<User> registeredUsers;
-    std::list<Message> messageBuffer;
+    std::list<std::string> messageBuffer;
     void login(User user);
+    bool isLoggedIn;
     User currentUser;
 };
 

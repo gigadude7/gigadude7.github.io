@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Grant Hamilton Cordle. All rights reserved.
 //
 
-#include "User.h"
+#include "User.hpp"
 
 User::User(std::string newName) {
     name = newName;
@@ -29,6 +29,21 @@ bool User::operator==(const User& otherUser){
         return true;
     
     return false;
+}
+
+std::list<User> User::getUserFriends() {
+    return friends.getList();
+}
+
+std::list<std::string> User:: usersFriends() {
+    std::list<std::string>friendNames;
+    if (friends.getList().size() != 0) {
+        for (std::list<User>::iterator it=friends.getList().begin(); it != friends.getList().end(); ++it) {
+            friendNames.push_back( it->getName().substr(0, it->getName().length()));
+        }
+
+    }
+    return friendNames;
 }
 
 

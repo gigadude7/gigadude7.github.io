@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9377FB451BB1213600E1B914 /* FriendList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9377FB431BB1213600E1B914 /* FriendList.cpp */; settings = {ASSET_TAGS = (); }; };
+		9377FB481BB1FAD600E1B914 /* WallPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9377FB461BB1FAD600E1B914 /* WallPage.cpp */; settings = {ASSET_TAGS = (); }; };
+		9377FB4B1BB1FAE100E1B914 /* HomePage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9377FB491BB1FAE100E1B914 /* HomePage.cpp */; settings = {ASSET_TAGS = (); }; };
 		93AA1EF91BAF80BE00186275 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93AA1EF81BAF80BE00186275 /* main.cpp */; };
 		93AA1F0A1BAF823000186275 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93AA1F081BAF823000186275 /* Message.cpp */; };
 		93AA1F0D1BAF823900186275 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93AA1F0B1BAF823900186275 /* User.cpp */; };
@@ -29,17 +31,21 @@
 
 /* Begin PBXFileReference section */
 		9377FB431BB1213600E1B914 /* FriendList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FriendList.cpp; sourceTree = "<group>"; };
-		9377FB441BB1213600E1B914 /* FriendList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendList.h; sourceTree = "<group>"; };
+		9377FB441BB1213600E1B914 /* FriendList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FriendList.hpp; sourceTree = "<group>"; };
+		9377FB461BB1FAD600E1B914 /* WallPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WallPage.cpp; sourceTree = "<group>"; };
+		9377FB471BB1FAD600E1B914 /* WallPage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WallPage.hpp; sourceTree = "<group>"; };
+		9377FB491BB1FAE100E1B914 /* HomePage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HomePage.cpp; sourceTree = "<group>"; };
+		9377FB4A1BB1FAE100E1B914 /* HomePage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HomePage.hpp; sourceTree = "<group>"; };
 		93AA1EF51BAF80BE00186275 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AA1EF81BAF80BE00186275 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		93AA1F081BAF823000186275 /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Message.cpp; sourceTree = "<group>"; };
-		93AA1F091BAF823000186275 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		93AA1F091BAF823000186275 /* Message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Message.hpp; sourceTree = "<group>"; };
 		93AA1F0B1BAF823900186275 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
-		93AA1F0C1BAF823900186275 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		93AA1F0C1BAF823900186275 /* User.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = User.hpp; sourceTree = "<group>"; };
 		93B24A121BAFAAC4005E495A /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = System.cpp; sourceTree = "<group>"; };
-		93B24A131BAFAAC4005E495A /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		93B24A131BAFAAC4005E495A /* System.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = System.hpp; sourceTree = "<group>"; };
 		93B24A151BAFADBF005E495A /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
-		93B24A161BAFADBF005E495A /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		93B24A161BAFADBF005E495A /* Menu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +79,20 @@
 			isa = PBXGroup;
 			children = (
 				93AA1EF81BAF80BE00186275 /* main.cpp */,
+				9377FB461BB1FAD600E1B914 /* WallPage.cpp */,
+				9377FB471BB1FAD600E1B914 /* WallPage.hpp */,
+				9377FB491BB1FAE100E1B914 /* HomePage.cpp */,
+				9377FB4A1BB1FAE100E1B914 /* HomePage.hpp */,
 				93B24A121BAFAAC4005E495A /* System.cpp */,
-				93B24A131BAFAAC4005E495A /* System.h */,
+				93B24A131BAFAAC4005E495A /* System.hpp */,
 				93B24A151BAFADBF005E495A /* Menu.cpp */,
-				93B24A161BAFADBF005E495A /* Menu.h */,
+				93B24A161BAFADBF005E495A /* Menu.hpp */,
 				93AA1F081BAF823000186275 /* Message.cpp */,
-				93AA1F091BAF823000186275 /* Message.h */,
+				93AA1F091BAF823000186275 /* Message.hpp */,
 				93AA1F0B1BAF823900186275 /* User.cpp */,
-				93AA1F0C1BAF823900186275 /* User.h */,
+				93AA1F0C1BAF823900186275 /* User.hpp */,
 				9377FB431BB1213600E1B914 /* FriendList.cpp */,
-				9377FB441BB1213600E1B914 /* FriendList.h */,
+				9377FB441BB1213600E1B914 /* FriendList.hpp */,
 			);
 			path = lab1;
 			sourceTree = "<group>";
@@ -145,6 +155,8 @@
 			files = (
 				93B24A141BAFAAC4005E495A /* System.cpp in Sources */,
 				93AA1F0D1BAF823900186275 /* User.cpp in Sources */,
+				9377FB481BB1FAD600E1B914 /* WallPage.cpp in Sources */,
+				9377FB4B1BB1FAE100E1B914 /* HomePage.cpp in Sources */,
 				93AA1EF91BAF80BE00186275 /* main.cpp in Sources */,
 				93AA1F0A1BAF823000186275 /* Message.cpp in Sources */,
 				93B24A171BAFADBF005E495A /* Menu.cpp in Sources */,

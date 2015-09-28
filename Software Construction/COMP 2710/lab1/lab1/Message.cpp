@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Grant Hamilton Cordle. All rights reserved.
 //
 
-#include "Message.h"
+#include "Message.hpp"
+#include "User.hpp"
 
 Message::Message(User& currentUser, std::string newMessage, bool isPublic){
     newUser = &currentUser;
@@ -16,7 +17,7 @@ Message::Message(User& currentUser, std::string newMessage, bool isPublic){
 
 std::string Message:: buildMessage(){
     std::string opener = "{[";
-    std::string closer = "]]";
+    std::string closer = "]}";
     std::string tweetString = "";
     if (isTweet) {
         tweetString = "::tweet";
@@ -24,4 +25,12 @@ std::string Message:: buildMessage(){
     
     return opener + newUser->getName() + tweetString + closer + message;
     
+}
+
+std::string Message::getMessageContents() {
+    return message;
+}
+
+User Message:: getMessageOwner() {
+    return *newUser;
 }
