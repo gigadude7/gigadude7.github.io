@@ -28,7 +28,7 @@ class System {
     
 public:
     System();
-    void createNewUser();
+    void createNewUser();   
     void postMessage();
     void tweetMessage();
     void displayWall();
@@ -40,8 +40,8 @@ public:
     void displayFriends();
 
 private:
-    std::list<User> registeredUsers;
-    std::list<std::string> messageBuffer;
+    std::list<User> registeredUsers;        //list of all people who have logged into WeagleBook
+    std::list<std::string> messageBuffer;   //internal list of strings that holds all typed messages
     void login(User user);
     bool isLoggedIn;
     User currentUser;

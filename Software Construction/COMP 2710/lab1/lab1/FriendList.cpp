@@ -16,14 +16,29 @@
 #include "User.hpp"
 #include <algorithm>
 
+//Function:     FriendList()
+//Inputs:       None
+//Outputs:      None
+//Description:  Constructor for the FriendList.
+//
 FriendList::FriendList() {
     friends = *new std::list<User>;
 }
 
+//Function:     addFriend()
+//Inputs:       A user to add
+//Outputs:      None
+//Description:  Adds the user to the friend list.
+//
 void FriendList::addFriend(User newFriend) {
     friends.push_front(newFriend);
 }
 
+//Function:     returnFriends()
+//Inputs:       None
+//Outputs:      Prints out friends
+//Description:  When called on a user, it prints out a list of the User's friends.
+//
 void FriendList::returnFriends() {
     if (friends.size() == 0)
         std::cout << "\n\nYou have no friends.\n\n";
@@ -31,6 +46,11 @@ void FriendList::returnFriends() {
         std::cout << "\n" + it->getName() + "\n";
 }
 
+//Function:     getList()
+//Inputs:       None
+//Outputs:      List of type User
+//Description:  When called on a friend list, returns a list of type user of the current User's friends. 
+//
 std::list<User> FriendList:: getList() {
     return friends;
 }

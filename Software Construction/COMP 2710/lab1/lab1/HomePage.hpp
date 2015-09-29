@@ -28,8 +28,8 @@ public:
     void shouldDisplayMore(bool userInput);
     
 private:
-    int messagesDisplayed;
-    bool displayMore;
+    int messagesDisplayed;       //number of messages currently displayed
+    bool displayMore;            //if more messages should be displayed
 };
 
 

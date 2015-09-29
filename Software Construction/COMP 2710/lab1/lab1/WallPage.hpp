@@ -27,8 +27,8 @@ public:
     void shouldDisplayMore(bool userInput);
     
 private:
-    int messagesDisplayed;
-    bool displayMore;
+    int messagesDisplayed;                  //# of messages displayed
+    bool displayMore;                       //if more messages should be displayed
 };
 
 #endif /* WallPage_hpp */

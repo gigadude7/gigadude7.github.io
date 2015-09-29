@@ -20,18 +20,33 @@
 //Description:  Constructor for the Wall Page
 //
 HomePage::HomePage() {
-    messagesDisplayed = 0;
-    displayMore = false;
+    messagesDisplayed = 0;  //number of messages currently displayed
+    displayMore = false;    //wether or not to display more messages
 }
 
+//Function:     getDisplayedMessages()
+//Inputs:       None
+//Outputs:      Number of messages that is currently displayed
+//Description:  getter for the number of messages that is currently displayed
+//
 int HomePage:: getDisplayedMessages() {
     return messagesDisplayed;
 }
 
+//Function:     getDisplayMore()
+//Inputs:       None
+//Outputs:      bool for wether or not to display more messages
+//Description:  getter for wether or not to display more messages
+//
 bool HomePage:: getDisplayMore() {
     return displayMore;
 }
 
+//Function:     WallPage()
+//Inputs:       bool - set wether or not to display more messages
+//Outputs:      None
+//Description:  Setter for wether or not to display more messages
+//
 void HomePage:: shouldDisplayMore(bool userInput) {
     displayMore = userInput;
 }

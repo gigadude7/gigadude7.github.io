@@ -31,8 +31,8 @@ public:
     std::string getMessageContents();
 
 private:
-    std::string message;
-    User *newUser;
+    std::string message;    //Current message as a string
+    User *newUser;          //Current User
     
 };
 

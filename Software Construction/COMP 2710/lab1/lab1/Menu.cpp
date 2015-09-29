@@ -12,14 +12,22 @@
 //  Email:          ghc0001@auburn.edu
 //  Description:    This program is made to handle all of the different from the main function.
 #include "Menu.hpp"
-
 #include <iostream>
 
-
+//Function:     startMenu()
+//Inputs:       None
+//Outputs:      None
+//Description:  Displays the formatted menu choices for the user to choose from.
+//
 void Menu::startMenu() {
     std::cout << "\n1) Create a new user\n2) Post a message\n3) Tweet a message \n4) Display Wall page \n5) Display Home page \n6) Add a friend \n7) Switch to a different user \n8) Display Friends \n9) Quit WeagleBook\n\n   Please Choose an Option:";
 }
 
+//Function:     userChoice()
+//Inputs:       int that tells the program what action to do
+//Outputs:      None
+//Description:  Processes the User's input, and if invalid, does not accept it.
+//
 void Menu::userChoice(int input) {
     switch (input) {
         case 1:

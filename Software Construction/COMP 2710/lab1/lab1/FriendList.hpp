@@ -25,7 +25,7 @@ public:
     FriendList();
     void addFriend(User newFriend);
     void returnFriends();
-    std::list<User> friends;
+    std::list<User> friends;    //internal list of friends
     std::list<User> getList();
 };
 

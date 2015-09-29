@@ -25,7 +25,7 @@ public:
     void startMenu();
     void userChoice(int input);
 private:
-    System console;
+    System console;     //Instance of the Weaglebook system
 };
 
 #endif /* defined(__lab1__Menu__) */

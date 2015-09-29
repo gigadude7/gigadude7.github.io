@@ -1,0 +1,417 @@
+============================================
+ Welcome to the WeagleBook Messaging System
+============================================
+
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:1
+
+   Enter user Name> Grant
+
+
+
+===============================================
+       Welcome to WeagleBook:Grant        
+===============================================
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2
+
+   Please enter your message:Hello everyone!
+I've made weaglebook to be a super cool chat room!
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2
+
+   Please enter your message:I went to the bahamas, and it was awesome!
+Food and fun in the gulf!
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:1
+
+   Enter user Name> Bill
+
+
+
+===============================================
+       Welcome to WeagleBook:Bill        
+===============================================
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2
+
+   Please enter your message:Welcome to my new page!
+I don't know how to do this, so please take it easy with me!
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2
+
+   Please enter your message:!!
+
+Your message had no content and was not logged.
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:6
+Enter user's Name> Grant
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:8
+
+Grant
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:3
+
+   Please enter your message:I can't believe I hiked that trail last year, it took so long!!
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2
+
+   Please enter your message:Hiking in the rockies in not too long! 
+I'm pumped!
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:4
+===============================================
+        Welcome to Bill's Wall Page!
+===============================================
+
+Hiking in the rockies in not too long! 
+I'm pumped!
+
+
+I can't believe I hiked that trail last year, it took so long!!
+
+Display more messages? (yes/no) > yes
+
+Welcome to my new page!
+I don't know how to do this, so please take it easy with me!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:1
+
+   Enter user Name> Peter
+
+
+
+===============================================
+       Welcome to WeagleBook:Peter        
+===============================================
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2  
+
+   Please enter your message:Summer was so hot!
+Still trying to adjust to the new year!
+Back to the old grind. 
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:R
+
+
+Please enter a whole number between 1 and 9!
+
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:6
+Enter user's Name> Grant
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2                               
+
+   Please enter your message:I had a great time at the beach. 
+Sailing, diving, and scuba are awesome!
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:5
+
+===============================================
+       Now Displaying Peter's Home Page
+===============================================
+
+Peter:
+I had a great time at the beach. 
+Sailing, diving, and scuba are awesome!
+
+Peter:
+Summer was so hot!
+Still trying to adjust to the new year!
+Back to the old grind. 
+
+Display more messages? (yes/no) > no
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:7
+Enter user's Name> Grant
+
+===============================================
+   Welcome back to WeagleBook: Grant   
+===============================================
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:6
+Enter user's Name> Peter
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:8
+
+Peter
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:2
+
+   Please enter your message:Best cruise ever!
+Hit some rough sea though. 
+!!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:5
+
+===============================================
+       Now Displaying Grant's Home Page
+===============================================
+
+Grant:
+Best cruise ever!
+Hit some rough sea though. 
+
+Peter:
+I had a great time at the beach. 
+Sailing, diving, and scuba are awesome!
+
+Display more messages? (yes/no) > yes
+
+Peter:
+Summer was so hot!
+Still trying to adjust to the new year!
+Back to the old grind. 
+
+Grant:
+I went to the bahamas, and it was awesome!
+Food and fun in the gulf!
+
+Grant:
+Hello everyone!
+I've made weaglebook to be a super cool chat room!
+
+1) Create a new user
+2) Post a message
+3) Tweet a message 
+4) Display Wall page 
+5) Display Home page 
+6) Add a friend 
+7) Switch to a different user 
+8) Display Friends 
+9) Quit WeagleBook
+
+   Please Choose an Option:9
+
+Thank you for Using WeagleBook.
+See you next time!
+
+Examples of Testing:

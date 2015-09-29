@@ -14,18 +14,38 @@
 
 #include "User.hpp"
 
+//Function:     User()
+//Inputs:       Name of the user you want to make
+//Outputs:      None
+//Description:  Constructer for the User class
+//
 User::User(std::string newName) {
-    name = newName;
+    name = newName; //name of the user
 }
 
+//Function:     User()
+//Inputs:       None
+//Outputs:      None
+//Description:  Parameterless constructor for the User class
+//
 User::User() {
     
 }
 
+//Function:     getName()
+//Inputs:       None
+//Outputs:      String that represents the User's name
+//Description:  when called on a user, it returns a string that contains that user's name
+//
 std::string User:: getName(){
     return name;
 }
 
+//Function:     operator==(cont User& otherUser)
+//Inputs:       A User object
+//Outputs:      Bool that says wether the users are equivalent
+//Description:  Overwritten == method. Returns true if the Users have the same name, and false if they do not.
+//
 bool User::operator==(const User& otherUser){
     if (otherUser.name == "") {
         return false;
@@ -37,10 +57,20 @@ bool User::operator==(const User& otherUser){
     return false;
 }
 
+//Function:     getUserFriends()
+//Inputs:       None
+//Outputs:      A list of type user that represnts the User's friends as users.
+//Description:  When called on a user, it returns that User's frineds as users.
+//
 std::list<User> User::getUserFriends() {
     return friends.getList();
 }
 
+//Function:     userFriends()
+//Inputs:       None
+//Outputs:      A list of the User's friends as strings.
+//Description:  when called on a user, it returns that User's friends as strings. 
+//
 std::list<std::string> User:: usersFriends() {
     std::list<std::string>friendNames;
     if (friends.getList().size() != 0) {

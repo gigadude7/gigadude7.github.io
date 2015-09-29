@@ -32,7 +32,7 @@ public:
     std::list<User> getUserFriends();
     std::list<std::string> usersFriends();
 private:
-    std::string name;
+    std::string name;   //User's name in string form
 };
 
 
