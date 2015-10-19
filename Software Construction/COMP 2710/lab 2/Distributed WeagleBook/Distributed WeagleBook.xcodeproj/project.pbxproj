@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9324E3421BCB42500054FEC5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9324E3411BCB42500054FEC5 /* main.cpp */; };
+		937D36671BCC9DE9004C8786 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937D36651BCC9DE9004C8786 /* Menu.cpp */; settings = {ASSET_TAGS = (); }; };
+		937D366A1BCC9DF6004C8786 /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937D36681BCC9DF6004C8786 /* System.cpp */; settings = {ASSET_TAGS = (); }; };
+		937D366D1BCC9E0E004C8786 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937D366B1BCC9E0E004C8786 /* User.cpp */; settings = {ASSET_TAGS = (); }; };
+		937D36701BCC9E15004C8786 /* Message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937D366E1BCC9E15004C8786 /* Message.cpp */; settings = {ASSET_TAGS = (); }; };
+		937D36731BCC9E1C004C8786 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 937D36711BCC9E1C004C8786 /* Time.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		9324E33E1BCB42500054FEC5 /* Distributed WeagleBook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Distributed WeagleBook"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9324E3411BCB42500054FEC5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		937D36651BCC9DE9004C8786 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		937D36661BCC9DE9004C8786 /* Menu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
+		937D36681BCC9DF6004C8786 /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = System.cpp; sourceTree = "<group>"; };
+		937D36691BCC9DF6004C8786 /* System.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = System.hpp; sourceTree = "<group>"; };
+		937D366B1BCC9E0E004C8786 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
+		937D366C1BCC9E0E004C8786 /* User.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = User.hpp; sourceTree = "<group>"; };
+		937D366E1BCC9E15004C8786 /* Message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Message.cpp; sourceTree = "<group>"; };
+		937D366F1BCC9E15004C8786 /* Message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Message.hpp; sourceTree = "<group>"; };
+		937D36711BCC9E1C004C8786 /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
+		937D36721BCC9E1C004C8786 /* Time.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Time.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				9324E3411BCB42500054FEC5 /* main.cpp */,
+				937D36651BCC9DE9004C8786 /* Menu.cpp */,
+				937D36661BCC9DE9004C8786 /* Menu.hpp */,
+				937D36681BCC9DF6004C8786 /* System.cpp */,
+				937D36691BCC9DF6004C8786 /* System.hpp */,
+				937D366B1BCC9E0E004C8786 /* User.cpp */,
+				937D366C1BCC9E0E004C8786 /* User.hpp */,
+				937D366E1BCC9E15004C8786 /* Message.cpp */,
+				937D366F1BCC9E15004C8786 /* Message.hpp */,
+				937D36711BCC9E1C004C8786 /* Time.cpp */,
+				937D36721BCC9E1C004C8786 /* Time.hpp */,
 			);
 			path = "Distributed WeagleBook";
 			sourceTree = "<group>";
@@ -118,7 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937D36731BCC9E1C004C8786 /* Time.cpp in Sources */,
+				937D366D1BCC9E0E004C8786 /* User.cpp in Sources */,
+				937D366A1BCC9DF6004C8786 /* System.cpp in Sources */,
+				937D36671BCC9DE9004C8786 /* Menu.cpp in Sources */,
 				9324E3421BCB42500054FEC5 /* main.cpp in Sources */,
+				937D36701BCC9E15004C8786 /* Message.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +265,7 @@
 				9324E3471BCB42500054FEC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

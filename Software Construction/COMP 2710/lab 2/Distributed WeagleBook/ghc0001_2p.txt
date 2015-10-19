@@ -1,0 +1,68 @@
+1) Analysis
+ - Use Cases
+ 	- A user will be able to log into the Distributed WeagleBook Messaging System concurrently with different Users on multiple computers at once. 
+	- A User will be able to add other users as their friends. Being friends with a user means that you can see their non-tweeted messages. 
+	- A user will be able to post a message. The only people that can see this type of message is a User who has the current User on their friend’s list, and the User who posted it. 
+	- A user can Tweet a message. Tweeted messages are public, and can be seen by anyone. 
+	- A User can display their wall page. Their wall page will consist of messages posted or tweeted by themselves. 
+	- A User can display their home page. Their home page will consist of post and tweets from themselves and friends, as well as tweets from anyone else. 
+	- A User will be able to easily close the Distributed WeagleBook Messaging System. 
+	- A User will be able to easily navigate the program using a one character commands that will be interpreted by a menu. 
+	- If an invalid input is entered, the DWMS will respond appropriately and will not crash. 
+
+2) 
+ - Classes
+	- USER: The purpose of the User class will be to contain basic information about someone who has logged in previously. 
+Has variables for the User’s friends and the User’s name. Has getter and setter methods for both.
+ It is dependent on no other classes. 
+
+	- MESSAGE: The purpose of the Message class will be to provide a concise way to create messages in other classes that user various elements such as time posted, who posted it, and what type of message it was, and what the actual message was.
+There will be instance variables for each of the four things listed above. There will also be getter and setter methods for each of the variables. 
+It is dependent on the User class and the Time class. 
+
+	- TIME: The purpose of the time class will be to maintain a “Time” object that will get a time when called. 
+It will have an instance variable to store the Time as a number. This class will have a getter for the value of the internal “Time” object. 
+It is dependent on no there classes. 
+
+	- MENU: The sole purpose of the menu class is to interpret user input, and call the corresponding function from the system class. 
+It contains no member variables. 
+It controls the System class
+
+	- SYSTEM: The purpose of the System class is to instantiate and call each of the different classes. It is what is going to be able to let all of the different classes work together.
+It will have a User for the current User, a list of strings for the message buffer, and functions for adding friends, posting messages, tweeting messages, displaying the wall page, displaying the home page, and quitting. 
+It is dependent on the User, Message, Time, and Menu classes. 
+
+3) Testing
+- System
+	1) User inputs an option that is not in the menu. The program responds by telling them to enter a valid input and giving an example of a valid input. 
+	2) User attemts to create a user with the same name. The program will not allow it, and will prompt the user to enter a different name 
+	3) User attempts to add a friend that doesn't exist. The program will inform them that they could not find the user, and will suggest that they try again or enter a different name. 
+	4) More than one User attempts to log in at once. The program will be able to handle it. 
+	5) User attempts to display messages. They will properly display in a reverse-chronological order based on their Times. 
+
+- Specific Object Testing
+	6) A user gets an instance of a Time. The time will be generated correctly, and will be easily comparable to other time objects.  
+	7) User attemts to make an empty message. The program will tell them that their message was empty and will not log it. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
