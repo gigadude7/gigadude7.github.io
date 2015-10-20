@@ -32,10 +32,10 @@ int main(int argc, const char * argv[]) {
     cout << "========================================================\n\n";
     cout << "Please enter user name: ";
     
-    string username;
+    string username;                    //string to hold user name
     getline(cin, username);
-    User currentUser = User(username);
-    System console = System(username);
+    User currentUser = User(username);  //Current User object
+    System console = System(username);  //Instantiates the System
     
     cout << "\n\n========================================================\n";
     cout << " Welcome to the Distributed WeagleBook Messaging System\n";

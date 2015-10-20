@@ -1,20 +1,36 @@
 //
 //  System.cpp
-//  Distributed WeagleBook
+//  lab2
 //
-//  Created by Grant Hamilton Cordle on 10/12/15.
-//  Copyright © 2015 Grant Hamilton Cordle. All rights reserved.
+//  Created by Grant Hamilton Cordle on 10/14/15.
+//  Copyright (c) 2015 Grant Hamilton Cordle. All rights reserved.
 //
-
+//  Program:        ghc0001_2 (lab2)
+//  Name:           Grant Cordle
+//  Class:          COMP 2710 Section 002
+//  Date:           Oct 14, 2015
+//  Email:          ghc0001@auburn.edu
+//  Description:    This is the function that effectively calls the other functions and gets them to interface with each other. 
 #include "System.hpp"
+#include <list>
 
+//Function:     System
+//Inputs:       User for the current User
+//Outputs:      None
+//Description:  Constructor for the System object
+//
 System::System(User user){
-    currentUser = user;
-    newTime = Time();
+    currentUser = user;     //sets passedin user to the current user for the system
+    newTime = Time();       //creates a new time and stores it as the current time
 }
 
+//Function:     addFriend()
+//Inputs:       None
+//Outputs:      Bool
+//Description:  Adds a friend to the User's friend list. If it does, it returns true.
+//
 bool System::addFriend() {
-    std::string fndName;
+    std::string fndName;    //holder for friend's name
     cout << "\n Please enter the name of the friend you would like to add: ";
     cin.clear();
     cin.ignore(10000, '\n');
@@ -30,6 +46,11 @@ bool System::addFriend() {
     }
 }
 
+//Function:     postMessage()
+//Inputs:       None
+//Outputs:      Bool
+//Description:  Posts the User's message. If it does, returns true.
+//
 bool System::postMessage(){
     std::string message = "";                   //string to store the user's message
     cout << "\n   Please enter your message:";
@@ -44,11 +65,15 @@ bool System::postMessage(){
         }
         message += messageToken + "\n";
     }
-    cout << "This is the message content:" << message;
     Message tempMessage = Message(currentUser.name, message, newTime.getTime());
     return tempMessage.postMessage();
 }
 
+//Function:     tweetMessage()
+//Inputs:       None
+//Outputs:      Bool
+//Description:  Tweets the User's message. If it does, returns true.
+//
 bool System::tweetMessage() {
     std::string message = "";                   //string to store the user's message
     cout << "\n   Please enter your message:";
@@ -68,127 +93,147 @@ bool System::tweetMessage() {
     return tempMessage.tweetMessage();
 }
 
+//Function:     displayWall()
+//Inputs:       None
+//Outputs:      Bool
+//Description:  Gets the Users messages and displays them as a wall page.
+//
 void System::displayWall() {
-    string currentLine;
+    string currentLine;                                                         //string holder
     cout<< "===============================================\n";
     cout<< "        Welcome to " <<  currentUser.name <<"'s Wall Page!\n";
     cout<< "===============================================\n";
     
-    string const fileName = (currentUser.name + "Messages.txt");
+    string const fileName = (currentUser.name + "Messages.txt");                //string for name of the user's messages file
     ifstream inputFile(fileName.c_str());
     if (!inputFile){
         cout << "\nYou seem to have no messages! Pleaser enter messages or try a different command!\n";
     }
+    
     else {
-        string const inputFileName = (currentUser.name + "Messages.txt");
-        inputFile.open(inputFileName.c_str());
-        if (!inputFile.eof()) {
+        string currentLine;                             //string holder
+        bool continueCheck = false;                     //bool to help decide when to break the loop
+        int displayedMessages = 0;                      //int that helps keep track of # of displayed messages
+        while (!inputFile.eof() && !continueCheck) {
             getline(inputFile, currentLine);
-            string currentMessage = currentLine.substr(4 + currentUser.name.length()); //retrives just the message
-            cout << currentMessage + "\n";		   //prints line of file
+            if (currentLine.compare("") != 0) {
+                size_t endOfTime = currentLine.find(">}");      //location of start of message
+                currentLine = currentLine.substr(endOfTime + 2);
+                
+                cout << currentLine << "\n";
+                displayedMessages++;
+            }
+            if (displayedMessages == 2) {
+                string userChoice;                      //string holder
+                cout << "\nDisplay more messages? (yes/no) > ";
+                cin.clear();
+                std::cin.ignore(10000, '\n');
+                getline(cin, userChoice);
+                displayedMessages++;
+                
+                if (userChoice.compare("no") == 0) {
+                    continueCheck = true;
+                }
+                
+            }
         }
-        if (!inputFile.eof()) {
+        
+    }
+    inputFile.close();
+}
+
+//Function:     displayHome()
+//Inputs:       None
+//Outputs:      void
+//Description:  Gets the messages from the User's frineds and all the tweets and then displays them on the home page.
+//
+void System::displayHome() {
+    string currentLine;         //string holder
+    string homePageString;      //string holder
+    cout<< "===============================================\n";
+    cout<< "        Welcome to " <<  currentUser.name <<"'s Home Page!\n";
+    cout<< "===============================================\n";
+    
+    list<string> messages;
+    ofstream outputFile ("homePage.txt");
+    
+    ifstream inputFile ("Tweets.txt");
+    if (inputFile) {
+        while (!inputFile.eof()) {
             getline(inputFile, currentLine);
-            string currentMessage = currentLine.substr(4 + currentUser.name.length()); //retrives just the message
-            cout << currentMessage + "\n";		   //prints line of file
+            if (currentLine.compare("") != 0) {
+                size_t endOfTime = currentLine.find(">}");          //when time ends
+                size_t startOfTime = currentLine.find("{<");        //when time starts
+                int timeRange = (int) (endOfTime - startOfTime);    //how long time is
+                
+                size_t endOfName = currentLine.find("]}");          //when name ends
+                size_t startOfName = currentLine.find("{[");        //when name starts
+                int nameRange = (int) (endOfName - startOfName);    //how long name is
+                
+                string name = currentLine.substr(startOfName + 2, nameRange);   //message name
+                string time = currentLine.substr(startOfTime + 2, timeRange);   //message time
+                string message = currentLine.substr(endOfTime + 2);             //message content
+                
+                string formattedString = time + ">} " + name + ": " + message;  //formatted message for the output file
+                
+                outputFile << formattedString;
+            }
+            
         }
-        if (getline(inputFile, currentLine)) {
+    }
+    inputFile.close();
+    for (std::list<string>::iterator it=currentUser.friends.begin(); it != currentUser.friends.end(); ++it) {
+        string friendName = it->substr(0); //gets name of friend
+        ifstream friendFile (friendName + "Messages.txt");  //opens frinds messages
+        
+        //reads friend's messages
+        while (!friendFile.eof()) {
+            if (currentLine.compare("") != 0) {
+                getline(friendFile, currentLine);
+                
+                size_t endOfTime = currentLine.find(">}");      //where time ends
+                size_t startOfTime = currentLine.find("{<");    //where time begins
+                int timeRange = (int) (endOfTime - startOfTime);
+                
+                string name = friendName;   //name of friend
+                string time = currentLine.substr(startOfTime + 2, timeRange); //time message was posted
+                string message = currentLine.substr(endOfTime + 2);           //message that was posted
+                
+                string formattedString = time + ">} " + name + ": " + message; //formatted message for outputfile
+                
+                outputFile << formattedString;
+            }
+            
+        }
+    }
+    outputFile.flush();
+    outputFile.close();
+    
+    string tempString;              //string holder
+    bool continueCheck = false;     //bool for while loop
+    int displayedMessages = 0;      //helps keep track of displayed messages
+    ifstream homePage ("homePage.txt");     //stream for the homePage messages
+    
+    while (!homePage.eof() && !continueCheck) {
+        getline(homePage, tempString);
+        if (tempString.compare("") != 0) {
+            cout << tempString << "\n";
+            displayedMessages++;
+        }
+        if (displayedMessages == 2) {
             string userChoice;
             cout << "\nDisplay more messages? (yes/no) > ";
             cin.clear();
             std::cin.ignore(10000, '\n');
             getline(cin, userChoice);
+            displayedMessages++;
             
-            if (userChoice.compare("yes") == 0) {
-                while (getline(inputFile, currentLine)) {
-                    string currentMessage = currentLine.substr(4 + currentUser.name.length()); //retrives just the message
-                    cout << currentMessage + "\n";		   //prints line of file
-                }
+            if (userChoice.compare("no") == 0) {
+                continueCheck = true;
             }
+            
         }
     }
-}
-
-void System::displayHome() {
-//    string currentLine;
-//    string homePageString;
-//    cout<< "===============================================\n";
-//    cout<< "        Welcome to " <<  currentUser.name <<"'s Home Page!\n";
-//    cout<< "===============================================\n";
-//    
-//    //bool find = false; //Bool that stores if the message's poster is in the friends list
-//    
-//    for (std::list<string>::iterator it=currentUser.friends.begin(); it != currentUser.friends.end(); ++it) {
-//        ifstream iFile(*it + ".txt");
-//        if (iFile) {
-//            ifstream inputFile;
-//            inputFile.open(*it + ".txt");
-//            while (getline(inputFile, currentLine)) {
-//                homePageString += currentLine + "\n";
-//            }
-//            inputFile.close();
-//        }
-//    }
-//    
-//    ifstream tweetFile("Tweets.txt");
-//    if (tweetFile) {
-//        ifstream newFile;
-//        newFile.open("Tweets.txt");
-//        while (getline(newFile, currentLine)) {
-//            homePageString += currentLine + "\n";
-//        }
-//        newFile.close();
-//    }
-    
-    
-    
-    
-    
-    
-    //        size_t startOfName = it->find("{[");
-    //        size_t endOfName = it->find("]}");
-    //        size_t startOfTime = it ->find("{<");
-    //        size_t endOfTime = it->find(">}");
-    //        int nameLength = (int) (endOfName - startOfName -2);
-    //        int timeLength = (int) (endOfTime - startOfName -2);
-    //        string messageTime = it->substr(2, timeLength);
-    //        string messageName = it->substr(endOfTime + 2, nameLength); //4 might not be the right number here.
-    
-    //        if (currentUser.friends.size() != 0)
-    //            find = (std::find(currentUser.friends.begin(), currentUser.friends.end(), messageName) != currentUser.friends.end());
-    //
-    //        if (currentUser.name == messageName)
-    //            find = true;
-    //
-    //        if (find) {
-    //            <#statements#>
-    //        }
-    
+    homePage.close();
     
 }
-
-//
-//    list<string>friendsMessages;
-//    list<string>friendNames = currentUser.usersFriends();
-//    bool find = false;  //Bool that stores if the message's poster is in the friends list
-//
-//    for (std::list<string>::iterator it=messageBuffer.begin(); it != messageBuffer.end(); ++it) {
-//        //if the message is from a friend OR is a tweet
-//        std::size_t isATweet = it->find("::tweet");             //location of the string '::tweet' in the message
-//        std::size_t startOfName = it->find("{[");               //location of the string '{[' in the message
-//        std::size_t endOfName = it->find("]}");                 //location of the string ']}' in the message
-//        int nameLength = (int) (endOfName - startOfName -2);    //length of the User's name
-//        string messageName = it->substr(2, nameLength);         //length of the message
-//
-//        //check to see if msgName is an element of friendNames
-//        if (friendNames.size() != 0){
-//            find = (std::find(friendNames.begin(), friendNames.end(), messageName) != friendNames.end());
-//        }
-//    
-
-
-
-
-
-
-

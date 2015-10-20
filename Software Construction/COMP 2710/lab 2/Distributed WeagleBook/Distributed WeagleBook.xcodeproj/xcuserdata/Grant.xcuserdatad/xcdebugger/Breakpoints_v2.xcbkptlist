@@ -6,32 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distributed WeagleBook/System.cpp"
-            timestampString = "466933160.456694"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "System::displayWall()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Distributed WeagleBook/Message.cpp"
-            timestampString = "466933559.250716"
+            filePath = "Distributed WeagleBook/System.cpp"
+            timestampString = "467001976.196133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "Message:: storeMessage(string msg)"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "System::displayHome()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

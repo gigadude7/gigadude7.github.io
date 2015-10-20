@@ -1,0 +1,353 @@
+Grants-MBP:Distributed WeagleBook Grant$ make
+g++ Menu.cpp Menu.hpp Message.cpp Message.hpp System.cpp System.hpp Time.cpp Time.hpp User.cpp User.hpp main.cpp
+Grants-MBP:Distributed WeagleBook Grant$ ./a.out
+========================================================
+           Distributed WeagleBook Messaging 
+========================================================
+
+Please enter user name: Bill 
+
+
+========================================================
+ Welcome to the Distributed WeagleBook Messaging System
+========================================================
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p
+
+   Please enter your message:Hello there, everyone!
+Welcome to our new chat group. 
+Feel free to post messages any time. 
+!!
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+t
+
+   Please enter your message:Amazing WeagleBook!
+Let's get this out quick. 
+!!
+
+
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p
+
+   Please enter your message:Taking a slow cruise to the Bahamas, y'll!
+Will be back to civilization in 7 days. 
+Keep you posted soon. 
+!!
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+q
+Thanks for using the Distributed WeagleBook Messaging System!
+Grants-MBP:Distributed WeagleBook Grant$ ./a.out
+========================================================
+           Distributed WeagleBook Messaging 
+========================================================
+
+Please enter user name: Tom
+
+
+========================================================
+ Welcome to the Distributed WeagleBook Messaging System
+========================================================
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+f
+
+ Please enter the name of the friend you would like to add: Bill
+
+
+Friend added
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p
+
+   Please enter your message:Welcome to my new msg page!
+I'm new to this, so be gentle, no flame please. 
+!!
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+t
+
+   Please enter your message:Let me be your friend. 
+It's fun. 
+!!
+
+
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p
+
+   Please enter your message:Hiking the Rockies in 5 days!
+Can't wait to head for the mountains. 
+w
+!!
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+w
+===============================================
+        Welcome to Tom's Wall Page!
+===============================================
+Hiking the Rockies in 5 days!
+an't wait to head for the mountains. 
+
+Display more messages? (yes/no) > yes
+
+Welcome to my new msg page!
+'m new to this, so be gentle, no flame please. 
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+q
+Thanks for using the Distributed WeagleBook Messaging System!
+Grants-MBP:Distributed WeagleBook Grant$ ./a.out
+========================================================
+           Distributed WeagleBook Messaging 
+========================================================
+
+Please enter user name: Jane
+
+
+========================================================
+ Welcome to the Distributed WeagleBook Messaging System
+========================================================
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+f
+
+ Please enter the name of the friend you would like to add: Tom
+
+
+Friend added
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p
+
+   Please enter your message:Summer is cool. 
+Still trying to adjust to the semseter drill. 
+!!
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+t
+
+   Please enter your message:Great stuff. 
+You need to try this. 
+!!
+
+
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p 
+
+   Please enter your message:We had a great time at the beach!
+Not the mention scuba diving and sailing. 
+!!
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+k
+Not a valid input! Please enter a valid character!
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+h
+===============================================
+        Welcome to Jane's Home Page!
+===============================================
+
+Jane:
+We had a great time at the beach!
+Not the mention scuba diving and sailing. 
+Jane:
+Great stuff. 
+You need to try this. 
+
+Display more messages? (yes/no) > yes
+
+Jane: 
+Summer was cool. 
+Still trying to adjust to the semester drill.
+
+Tom:
+Hiking the Rockies in 5 days!
+Can't wait to head for the mountains. 
+
+Tom: 
+Let me be your friend. 
+It's fun. 
+
+Tom:
+Welcome to my new msg page!
+'m new to this, so be gentle, no flame please. 
+
+Bill:
+Amazing WeagleBook!
+Let's get this out quick.
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+q
+Thanks for using the Distributed WeagleBook Messaging System!
+Grants-MBP:Distributed WeagleBook Grant$ ./a.out
+========================================================
+           Distributed WeagleBook Messaging 
+========================================================
+
+Please enter user name: Bill
+
+
+========================================================
+ Welcome to the Distributed WeagleBook Messaging System
+========================================================
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+f
+
+ Please enter the name of the friend you would like to add: Jane
+
+
+Friend added
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p
+
+   Please enter your message:I'm back to the daily grind. 
+What's new here?
+!!
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+h
+===============================================
+        Welcome to Bill's Home Page!
+===============================================
+
+Bill: 
+I'm back to the daily grind. 
+What's new here? 
+
+Jane: 
+We had a great time at the beach!
+Not the mention scuba diving and sailing. 
+
+Display more messages? (yes/no) > yes
+
+Jane: 
+Great stuff. 
+You need to try this. 
+
+Jane: 
+Summer was cool. 
+Still trying to adjust to the semester drill. 
+
+Tom: Let me be your friend. 
+It's fun. 
+
+Bill:
+Taking a slow cruise to the Bahamas, y'll!
+Will be back to civilization in 7 days. 
+Keep you posted soon. 
+
+Bill:
+Amazing WeagleBook!
+Let's get this out quick. 
+
+Bill:
+Hello there, everyone!
+Welcome to our new chat group. 
+Feel free to post messages any time.  
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+q
+Thanks for using the Distributed WeagleBook Messaging System!
+Grants-MBP:Distributed WeagleBook Grant$ ./a.out
+========================================================
+           Distributed WeagleBook Messaging 
+========================================================
+
+Please enter user name: Tim
+
+
+========================================================
+ Welcome to the Distributed WeagleBook Messaging System
+========================================================
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+f
+
+ Please enter the name of the friend you would like to add: Joey
+
+
+A user by that name could not be found.
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+p
+
+Please enter your message:!!
+
+Your message had no content and was not logged.
+
+
+Enter the character to access the feature:
+Add Friend (f), Post (p), Tweet(t), Wall (w), Home (h), Quit (q)
+q
+Thanks for using the Distributed WeagleBook Messaging System!
+
+
+
+Testing and explanation of output:
+Since everthing is written into files, this program can be used wherever a NFS is in place. As long as the program can read the files, it can perform its duty. 
+
+1) Line 177
+2) Through Implementation, I decided that, in order for the user to be able to log back on, they needed to be able to enter the same name again thus rendering this test case unapplicable. 
+3) Line 316
+4) After reevaluating the assignment, I determined that it was not necessary to have more than one user logged in at the same time, but just necessary for more than one user to be able to access all of the files from different locations. 
+5) Line 106
+6) This is seen on the back end of the program. You can also look into the "time.txt" file when this program is run to see that it grabs the largest number from that file. 
+7)Line 328 
+
+
+Compilation instructions: 
+1) Navigate to location. 
+2) Input "make"
+3) Input "./a.out"
