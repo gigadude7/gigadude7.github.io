@@ -16,13 +16,13 @@ int main() {
 		if (mazeName.compare("") != 0 && mazeName.compare("Quit") != 0) {
 			MazeLoader maze = MazeLoader(mazeName); 
 			if (!maze.readMaze()) {
-				cout << "\n\nThere seems to be nothing here. Please try a different file name!\n";
+				cout << "\n\nThere seems to be nothing here. Please try a different file name or type 'Quit' to quit the program.\n";
 			}
 		}
 
 		getline(cin, mazeName);
+		//cin.ignore(10000, '\n');
 		cin.clear(); 
-		cin.ignore(10000, '\n'); 
 	} while (mazeName.compare("Quit") != 0); 
 
 	cout << "\nThanks for using my Maze Solver! \n-Grant"; 

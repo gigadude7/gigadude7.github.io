@@ -8,9 +8,12 @@ public:
 	string mazeName; 
 	bool readMaze(); 
 	void solveMaze(); 
-	Node* nodeArray; 
+	Node *nodeArray; 
 	string currentLine;
 	string startNode;
 	string destinationNode;
+
+private:
+	int elementsInArray; 
 };
 
