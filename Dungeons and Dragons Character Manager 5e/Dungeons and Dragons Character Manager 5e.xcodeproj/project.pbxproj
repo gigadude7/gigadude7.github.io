@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9331693F1C39C04400CB49FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9331693E1C39C04400CB49FD /* main.m */; };
+		933169421C39C04400CB49FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 933169411C39C04400CB49FD /* AppDelegate.m */; };
+		9331694B1C39C04400CB49FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933169491C39C04400CB49FD /* Main.storyboard */; };
+		9331694D1C39C04400CB49FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9331694C1C39C04400CB49FD /* Assets.xcassets */; };
+		933169501C39C04400CB49FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9331694E1C39C04400CB49FD /* LaunchScreen.storyboard */; };
+		9331695C1C3F549000CB49FD /* CreateCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9331695B1C3F549000CB49FD /* CreateCharacter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9331693A1C39C04400CB49FD /* Dungeons and Dragons Character Manager 5e.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dungeons and Dragons Character Manager 5e.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331693E1C39C04400CB49FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		933169401C39C04400CB49FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		933169411C39C04400CB49FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9331694A1C39C04400CB49FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9331694C1C39C04400CB49FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9331694F1C39C04400CB49FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		933169511C39C04400CB49FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9331695A1C3F549000CB49FD /* CreateCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateCharacter.h; path = ../CreateCharacter.h; sourceTree = "<group>"; };
+		9331695B1C3F549000CB49FD /* CreateCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateCharacter.m; path = ../CreateCharacter.m; sourceTree = "<group>"; };
+		9331695D1C3F5AE600CB49FD /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		933169371C39C04400CB49FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		933169311C39C04400CB49FD = {
+			isa = PBXGroup;
+			children = (
+				9331693C1C39C04400CB49FD /* Dungeons and Dragons Character Manager 5e */,
+				9331693B1C39C04400CB49FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9331693B1C39C04400CB49FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9331693A1C39C04400CB49FD /* Dungeons and Dragons Character Manager 5e.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9331693C1C39C04400CB49FD /* Dungeons and Dragons Character Manager 5e */ = {
+			isa = PBXGroup;
+			children = (
+				933169401C39C04400CB49FD /* AppDelegate.h */,
+				933169411C39C04400CB49FD /* AppDelegate.m */,
+				9331695A1C3F549000CB49FD /* CreateCharacter.h */,
+				9331695B1C3F549000CB49FD /* CreateCharacter.m */,
+				9331695D1C3F5AE600CB49FD /* Constants.h */,
+				933169491C39C04400CB49FD /* Main.storyboard */,
+				9331694C1C39C04400CB49FD /* Assets.xcassets */,
+				9331694E1C39C04400CB49FD /* LaunchScreen.storyboard */,
+				933169511C39C04400CB49FD /* Info.plist */,
+				9331693D1C39C04400CB49FD /* Supporting Files */,
+			);
+			path = "Dungeons and Dragons Character Manager 5e";
+			sourceTree = "<group>";
+		};
+		9331693D1C39C04400CB49FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9331693E1C39C04400CB49FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		933169391C39C04400CB49FD /* Dungeons and Dragons Character Manager 5e */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933169541C39C04400CB49FD /* Build configuration list for PBXNativeTarget "Dungeons and Dragons Character Manager 5e" */;
+			buildPhases = (
+				933169361C39C04400CB49FD /* Sources */,
+				933169371C39C04400CB49FD /* Frameworks */,
+				933169381C39C04400CB49FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dungeons and Dragons Character Manager 5e";
+			productName = "Dungeons and Dragons Character Manager 5e";
+			productReference = 9331693A1C39C04400CB49FD /* Dungeons and Dragons Character Manager 5e.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		933169321C39C04400CB49FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Grant Hamilton Cordle";
+				TargetAttributes = {
+					933169391C39C04400CB49FD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 933169351C39C04400CB49FD /* Build configuration list for PBXProject "Dungeons and Dragons Character Manager 5e" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 933169311C39C04400CB49FD;
+			productRefGroup = 9331693B1C39C04400CB49FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				933169391C39C04400CB49FD /* Dungeons and Dragons Character Manager 5e */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		933169381C39C04400CB49FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933169501C39C04400CB49FD /* LaunchScreen.storyboard in Resources */,
+				9331694D1C39C04400CB49FD /* Assets.xcassets in Resources */,
+				9331694B1C39C04400CB49FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		933169361C39C04400CB49FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9331695C1C3F549000CB49FD /* CreateCharacter.m in Sources */,
+				933169421C39C04400CB49FD /* AppDelegate.m in Sources */,
+				9331693F1C39C04400CB49FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		933169491C39C04400CB49FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9331694A1C39C04400CB49FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9331694E1C39C04400CB49FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9331694F1C39C04400CB49FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		933169521C39C04400CB49FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		933169531C39C04400CB49FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		933169551C39C04400CB49FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dungeons and Dragons Character Manager 5e/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GHC.Dungeons-and-Dragons-Character-Manager-5e";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		933169561C39C04400CB49FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dungeons and Dragons Character Manager 5e/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GHC.Dungeons-and-Dragons-Character-Manager-5e";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		933169351C39C04400CB49FD /* Build configuration list for PBXProject "Dungeons and Dragons Character Manager 5e" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933169521C39C04400CB49FD /* Debug */,
+				933169531C39C04400CB49FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933169541C39C04400CB49FD /* Build configuration list for PBXNativeTarget "Dungeons and Dragons Character Manager 5e" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933169551C39C04400CB49FD /* Debug */,
+				933169561C39C04400CB49FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 933169321C39C04400CB49FD /* Project object */;
+}

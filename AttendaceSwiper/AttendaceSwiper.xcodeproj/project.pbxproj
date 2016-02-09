@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		933CD6B51C4C5FAB00C93C5A /* BrotherEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 933CD6B41C4C5FAB00C93C5A /* BrotherEntry.m */; };
+		933CD6B91C4C5FD300C93C5A /* Swiping.m in Sources */ = {isa = PBXBuildFile; fileRef = 933CD6B71C4C5FD300C93C5A /* Swiping.m */; };
+		933CD6C01C4C607D00C93C5A /* Brother+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 933CD6BD1C4C607D00C93C5A /* Brother+CoreDataProperties.m */; };
+		933CD6C11C4C607D00C93C5A /* Brother.m in Sources */ = {isa = PBXBuildFile; fileRef = 933CD6BF1C4C607D00C93C5A /* Brother.m */; };
+		933CD6CE1C4CA1DC00C93C5A /* BrotherListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933CD6CD1C4CA1DC00C93C5A /* BrotherListTableViewController.m */; };
+		93AFEF2E1C45CD51004B5DC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AFEF2D1C45CD51004B5DC5 /* AppDelegate.m */; };
+		93AFEF311C45CD51004B5DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AFEF301C45CD51004B5DC5 /* main.m */; };
+		93AFEF371C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93AFEF351C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodeld */; };
+		93AFEF391C45CD51004B5DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AFEF381C45CD51004B5DC5 /* Assets.xcassets */; };
+		93AFEF3C1C45CD51004B5DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AFEF3A1C45CD51004B5DC5 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		933CD6B31C4C5FAB00C93C5A /* BrotherEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrotherEntry.h; sourceTree = "<group>"; };
+		933CD6B41C4C5FAB00C93C5A /* BrotherEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrotherEntry.m; sourceTree = "<group>"; };
+		933CD6B61C4C5FD300C93C5A /* Swiping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swiping.h; sourceTree = "<group>"; };
+		933CD6B71C4C5FD300C93C5A /* Swiping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swiping.m; sourceTree = "<group>"; };
+		933CD6BC1C4C607D00C93C5A /* Brother+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Brother+CoreDataProperties.h"; path = "AttendaceSwiper/Brother+CoreDataProperties.h"; sourceTree = "<group>"; };
+		933CD6BD1C4C607D00C93C5A /* Brother+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Brother+CoreDataProperties.m"; path = "AttendaceSwiper/Brother+CoreDataProperties.m"; sourceTree = "<group>"; };
+		933CD6BE1C4C607D00C93C5A /* Brother.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Brother.h; path = AttendaceSwiper/Brother.h; sourceTree = "<group>"; };
+		933CD6BF1C4C607D00C93C5A /* Brother.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Brother.m; path = AttendaceSwiper/Brother.m; sourceTree = "<group>"; };
+		933CD6CC1C4CA1DC00C93C5A /* BrotherListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrotherListTableViewController.h; sourceTree = "<group>"; };
+		933CD6CD1C4CA1DC00C93C5A /* BrotherListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrotherListTableViewController.m; sourceTree = "<group>"; };
+		93AFEF291C45CD51004B5DC5 /* AttendaceSwiper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttendaceSwiper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93AFEF2C1C45CD51004B5DC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93AFEF2D1C45CD51004B5DC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93AFEF301C45CD51004B5DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93AFEF361C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AttendaceSwiper.xcdatamodel; sourceTree = "<group>"; };
+		93AFEF381C45CD51004B5DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93AFEF3B1C45CD51004B5DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93AFEF3D1C45CD51004B5DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93AFEF261C45CD50004B5DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		933CD6BB1C4C5FEA00C93C5A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				933CD6B31C4C5FAB00C93C5A /* BrotherEntry.h */,
+				933CD6B41C4C5FAB00C93C5A /* BrotherEntry.m */,
+				933CD6B61C4C5FD300C93C5A /* Swiping.h */,
+				933CD6B71C4C5FD300C93C5A /* Swiping.m */,
+				933CD6CC1C4CA1DC00C93C5A /* BrotherListTableViewController.h */,
+				933CD6CD1C4CA1DC00C93C5A /* BrotherListTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		933CD6C21C4C609B00C93C5A /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				933CD6BC1C4C607D00C93C5A /* Brother+CoreDataProperties.h */,
+				933CD6BD1C4C607D00C93C5A /* Brother+CoreDataProperties.m */,
+				933CD6BE1C4C607D00C93C5A /* Brother.h */,
+				933CD6BF1C4C607D00C93C5A /* Brother.m */,
+				93AFEF351C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodeld */,
+			);
+			name = "Core Data";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		93AFEF201C45CD50004B5DC5 = {
+			isa = PBXGroup;
+			children = (
+				93AFEF2B1C45CD51004B5DC5 /* AttendaceSwiper */,
+				93AFEF2A1C45CD51004B5DC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93AFEF2A1C45CD51004B5DC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93AFEF291C45CD51004B5DC5 /* AttendaceSwiper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93AFEF2B1C45CD51004B5DC5 /* AttendaceSwiper */ = {
+			isa = PBXGroup;
+			children = (
+				93AFEF2C1C45CD51004B5DC5 /* AppDelegate.h */,
+				93AFEF2D1C45CD51004B5DC5 /* AppDelegate.m */,
+				93AFEF3A1C45CD51004B5DC5 /* Main.storyboard */,
+				933CD6C21C4C609B00C93C5A /* Core Data */,
+				933CD6BB1C4C5FEA00C93C5A /* View Controllers */,
+				93AFEF2F1C45CD51004B5DC5 /* Supporting Files */,
+			);
+			path = AttendaceSwiper;
+			sourceTree = "<group>";
+		};
+		93AFEF2F1C45CD51004B5DC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93AFEF381C45CD51004B5DC5 /* Assets.xcassets */,
+				93AFEF3D1C45CD51004B5DC5 /* Info.plist */,
+				93AFEF301C45CD51004B5DC5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93AFEF281C45CD50004B5DC5 /* AttendaceSwiper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AFEF401C45CD51004B5DC5 /* Build configuration list for PBXNativeTarget "AttendaceSwiper" */;
+			buildPhases = (
+				93AFEF251C45CD50004B5DC5 /* Sources */,
+				93AFEF261C45CD50004B5DC5 /* Frameworks */,
+				93AFEF271C45CD50004B5DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AttendaceSwiper;
+			productName = AttendaceSwiper;
+			productReference = 93AFEF291C45CD51004B5DC5 /* AttendaceSwiper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93AFEF211C45CD50004B5DC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Grant Hamilton Cordle";
+				TargetAttributes = {
+					93AFEF281C45CD50004B5DC5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 93AFEF241C45CD50004B5DC5 /* Build configuration list for PBXProject "AttendaceSwiper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93AFEF201C45CD50004B5DC5;
+			productRefGroup = 93AFEF2A1C45CD51004B5DC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93AFEF281C45CD50004B5DC5 /* AttendaceSwiper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93AFEF271C45CD50004B5DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AFEF391C45CD51004B5DC5 /* Assets.xcassets in Resources */,
+				93AFEF3C1C45CD51004B5DC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93AFEF251C45CD50004B5DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AFEF311C45CD51004B5DC5 /* main.m in Sources */,
+				933CD6B51C4C5FAB00C93C5A /* BrotherEntry.m in Sources */,
+				93AFEF2E1C45CD51004B5DC5 /* AppDelegate.m in Sources */,
+				933CD6B91C4C5FD300C93C5A /* Swiping.m in Sources */,
+				933CD6C11C4C607D00C93C5A /* Brother.m in Sources */,
+				933CD6CE1C4CA1DC00C93C5A /* BrotherListTableViewController.m in Sources */,
+				933CD6C01C4C607D00C93C5A /* Brother+CoreDataProperties.m in Sources */,
+				93AFEF371C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93AFEF3A1C45CD51004B5DC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93AFEF3B1C45CD51004B5DC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93AFEF3E1C45CD51004B5DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93AFEF3F1C45CD51004B5DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		93AFEF411C45CD51004B5DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AttendaceSwiper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GHC.AttendaceSwiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93AFEF421C45CD51004B5DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AttendaceSwiper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GHC.AttendaceSwiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93AFEF241C45CD50004B5DC5 /* Build configuration list for PBXProject "AttendaceSwiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AFEF3E1C45CD51004B5DC5 /* Debug */,
+				93AFEF3F1C45CD51004B5DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93AFEF401C45CD51004B5DC5 /* Build configuration list for PBXNativeTarget "AttendaceSwiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93AFEF411C45CD51004B5DC5 /* Debug */,
+				93AFEF421C45CD51004B5DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93AFEF351C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93AFEF361C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodel */,
+			);
+			currentVersion = 93AFEF361C45CD51004B5DC5 /* AttendaceSwiper.xcdatamodel */;
+			name = AttendaceSwiper.xcdatamodeld;
+			path = AttendaceSwiper/AttendaceSwiper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93AFEF211C45CD50004B5DC5 /* Project object */;
+}
